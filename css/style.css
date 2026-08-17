@@ -752,17 +752,65 @@ footer {
 
 @media (max-width: 400px) {
 
+    .navbar {
+        height: 60px;
+        padding: 0 4%;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
     .nav-links {
-        gap: 7px 10px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        flex-wrap: nowrap;
+        overflow: hidden;
     }
 
     .nav-links a {
         font-size: 0.72rem;
+        padding: 21px 0;
+        white-space: nowrap;
     }
 
-    .hero-image {
-        width: 250px;
-        height: 195px;
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 90px 5% 40px;
+        gap: 30px;
+    }
+
+   .hero-image {
+        width: min(100%, 270px);
+        height: 210px;
+    }
+
+    .quick-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-item {
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: 1px solid #242433;
+    }
+
+    .highlight-item:last-child {
+        border-bottom: none;
     }
 
     .hero-buttons {
