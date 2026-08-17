@@ -589,21 +589,51 @@ footer {
 
 @media (max-width: 900px) {
 
+    /* =========================
+       Navbar
+    ========================= */
+
     .navbar {
-        padding: 18px 5%;
-        gap: 15px;
-        flex-wrap: wrap;
+        height: 70px;
+        padding: 0 5%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+        flex-wrap: nowrap;
     }
 
     .nav-links {
-        gap: 12px 18px;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        gap: 20px;
+        flex-wrap: nowrap;
+
+        min-width: 0;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
     }
 
     .nav-links a {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
+        padding: 25px 0;
+        flex-shrink: 0;
     }
+
+    .theme-toggle {
+        flex-shrink: 0;
+    }
+
 
     /* =========================
        Hero
@@ -614,7 +644,7 @@ footer {
 
         grid-template-columns: 1fr;
 
-        padding: 100px 5% 50px;
+        padding: 110px 5% 50px;
 
         gap: 40px;
     }
@@ -648,6 +678,7 @@ footer {
         object-position: center;
     }
 
+
     /* =========================
        Quick Highlights
     ========================= */
@@ -669,6 +700,7 @@ footer {
     .highlight-item:nth-child(4) {
         border-top: 1px solid #242433;
     }
+
 
     /* =========================
        Sections
@@ -705,23 +737,43 @@ footer {
 @media (max-width: 600px) {
 
     .navbar {
-        padding: 15px 4%;
+        height: 64px;
+        padding: 0 4%;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+
+        font-size: 1.1rem;
+
+        flex-shrink: 0;
     }
 
     .nav-links {
-        width: 100%;
-
-        gap: 8px 14px;
-
-        justify-content: center;
+        gap: 14px;
     }
 
     .nav-links a {
-        font-size: 0.78rem;
+        font-size: 0.76rem;
+        padding: 22px 0;
     }
 
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+
+        font-size: 0.85rem;
+
+        flex-shrink: 0;
+    }
+
+
+    /* Hero */
+
     .hero {
-        padding: 90px 5% 40px;
+        padding: 95px 5% 40px;
         gap: 30px;
     }
 
@@ -730,11 +782,16 @@ footer {
         height: 210px;
     }
 
+
+    /* Highlights */
+
     .quick-highlights {
         grid-template-columns: 1fr;
     }
 
     .highlight-item {
+        min-height: 80px;
+
         border-right: none !important;
         border-top: none !important;
         border-bottom: 1px solid #242433;
@@ -742,6 +799,19 @@ footer {
 
     .highlight-item:last-child {
         border-bottom: none;
+    }
+
+
+    /* Buttons */
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -753,73 +823,23 @@ footer {
 @media (max-width: 400px) {
 
     .navbar {
-        height: 60px;
-        padding: 0 4%;
-        gap: 10px;
-        flex-wrap: nowrap;
-    }
-
-    .logo {
-        width: 32px;
-        height: 32px;
-        font-size: 1.1rem;
-        flex-shrink: 0;
+        gap: 8px;
     }
 
     .nav-links {
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 12px;
-        flex-wrap: nowrap;
-        overflow: hidden;
+        gap: 10px;
     }
 
     .nav-links a {
-        font-size: 0.72rem;
-        padding: 21px 0;
-        white-space: nowrap;
-    }
-
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
-        flex-shrink: 0;
-        font-size: 0.85rem;
+        font-size: 0.70rem;
     }
 
     .hero {
         padding: 90px 5% 40px;
-        gap: 30px;
     }
 
-   .hero-image {
-        width: min(100%, 270px);
-        height: 210px;
-    }
-
-    .quick-highlights {
-        grid-template-columns: 1fr;
-    }
-
-    .highlight-item {
-        border-right: none !important;
-        border-top: none !important;
-        border-bottom: 1px solid #242433;
-    }
-
-    .highlight-item:last-child {
-        border-bottom: none;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-        text-align: center;
+    .hero-image {
+        width: 250px;
+        height: 195px;
     }
 }
