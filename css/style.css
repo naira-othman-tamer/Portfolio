@@ -596,6 +596,300 @@ a {
     text-decoration: none;
 }
 
+/* =========================
+   Outline Button (was missing — used by "View All" links)
+========================= */
+
+.btn-outline {
+    border: 1px solid #8b5cf6;
+    color: #8b5cf6;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #8b5cf6;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Experience
+========================= */
+
+.experience-timeline {
+    position: relative;
+    max-width: 800px;
+
+    padding-left: 30px;
+
+    border-left: 2px solid #242433;
+}
+
+.experience-item {
+    position: relative;
+
+    margin-bottom: 40px;
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-marker {
+    position: absolute;
+    top: 6px;
+    left: -37px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #8b5cf6;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.experience-content {
+    background: #12121b;
+    border: 1px solid #242433;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.experience-content:hover {
+    border-color: #8b5cf6;
+}
+
+.experience-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin-bottom: 6px;
+}
+
+.experience-header h3 {
+    font-size: 1.2rem;
+    color: #f5f5f7;
+}
+
+.experience-date {
+    color: #8b5cf6;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.experience-company {
+    color: #b8b8c7;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.experience-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience-list li {
+    position: relative;
+
+    padding-left: 18px;
+
+    color: #9292a3;
+    font-size: 0.92rem;
+}
+
+.experience-list li::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #8b5cf6;
+}
+
+
+/* =========================
+   Education
+========================= */
+
+.education-card {
+    max-width: 800px;
+
+    background: #12121b;
+    border: 1px solid #242433;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    border-color: #8b5cf6;
+}
+
+.education-card:last-child {
+    margin-bottom: 0;
+}
+
+.education-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin-bottom: 6px;
+}
+
+.education-main h3 {
+    font-size: 1.3rem;
+    color: #f5f5f7;
+}
+
+.education-date {
+    color: #8b5cf6;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.education-school {
+    color: #b8b8c7;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.education-gpa {
+    color: #9292a3;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.education-courses h4 {
+    color: #f5f5f7;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.course-tags span {
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    background: #1c1c29;
+    color: #b8b8c7;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   Certificates (homepage teaser)
+========================= */
+
+.certs-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cert-card {
+    background: #12121b;
+    border: 1px solid #242433;
+    border-radius: 12px;
+
+    padding: 25px;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.cert-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+
+    color: #8b5cf6;
+    font-size: 1.3rem;
+}
+
+.cert-card h3 {
+    font-size: 1rem;
+    color: #f5f5f7;
+    margin-bottom: 6px;
+}
+
+.cert-card p {
+    color: #9292a3;
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .certs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-timeline {
+        padding-left: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .certs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-content,
+    .education-card {
+        padding: 20px;
+    }
+}
 
 /* =========================
    Contact
