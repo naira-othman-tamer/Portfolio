@@ -1,77 +1,6 @@
 
-Claude finished the response
-Give me the link for the closest phase so I can choose the what I need of Lugus to select in my projects. Any addition would be complete for me. I need to also activate experience on my education. What you need from me supports you to complete these two sections that has no places in my portfolio. I need the brief about my education or experience at the home. on the bid for, um, uh, is that to all my certificates and indications in more, uh, details. As I have, uh, many certificates, I need to, uh, put in my portfolio. What's your opinion?
-
-Font Awesome icons: browse and search here → https://fontawesome.com/search?ic=free (filter "Free" + "Solid" for fas style, matches what you're using).
-
-Experience & Education: your nav already links to #experience and #education, but those sections don't exist in index.html yet — that's why they go nowhere. I can build both.
-
-My opinion on certificates: don't cram them into the homepage — it'll get long and hurt the clean look you have. Better as their own page (like projects.html), with a homepage teaser section ("Certifications" card row showing 3–4 highlights + "View All" button, same pattern as your Projects section).
-
-To build these, I need the actual content:
-
-For the Experience section, what do you have?
-Real job/internship history
-For Education, what should it show?
-Degree + courses + certificates together
-How many certificates do you have to feature?
-4-8
-Give me the details and I'll write the sections.
-
-Experience — for each job/internship:
-
-Company name, role/title, dates (e.g. "Jan 2025 – Present")
-2-4 bullet points on what you did/built
-Education — degree info:
-
-University name, degree title, dates, GPA (optional)
-Relevant courses (list of names)
-Certificates — for the 4-8 you want featured on the homepage teaser:
-
-Certificate name, issuer, date (optional)
-Link/credential URL if you have one
-Paste what you've got (rough notes are fine — I'll format it) and I'll build:
-
-New #experience and #education sections in index.html (matching your existing style)
-A homepage "Certifications" teaser
-A certificates.html page for the full list, same pattern as projects.html
-Create the HTML page on CSS for Zeesbert. Um, I think, uh, an indication at the home will be look, uh, good in a state of make everything in the separate HTML, just hand in home page, and the the details will be in separate HTML. The information, uh, I will support you later now. Let's start to prepare style and structure, uh, as HTML. Okay?
 
 
-Thought for 18s
-Thought for 18s
-Building the structure now with placeholder content — swap in your real details later, formatting stays the same.
-
-
-Index
-Code · HTML 
-
-Additions
-Code · CSS 
-
-Certificates
-Code · HTML 
-
-Certificatesstyle
-Code · CSS 
-
-Projects
-Code · HTML 
-
-Projectsstyle
-Code · CSS 
-
-Created 6 files, ran a command, edited a file · 3 notes
-Created 6 files, ran a command, edited a file · 3 notes
-
-You are out of free messages(opens in new tab) until 10:40 PM
-Upgrade
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-Projectsstyle · CSS
 /* ==================================================
    PROJECTS PAGE
    ================================================== */
@@ -112,6 +41,8 @@ body {
  
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
  
     padding: 0 5%;
     z-index: 1000;
@@ -121,16 +52,30 @@ body {
 }
  
 .projects-logo {
-    color: #f5f5f7;
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    color: #8b5cf6;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    border: 1px solid #8b5cf6;
+    /* color: #8b5cf6;
     font-size: 1.8rem;
     font-weight: 700;
     text-decoration: none;
  
-    flex-shrink: 0;
+    flex-shrink: 0; */
 }
  
 .projects-logo span {
-    color: #8b5cf6;
+    color: #f5f5f7;
 }
  
  
@@ -143,7 +88,7 @@ body {
  
     gap: 30px;
  
-    margin: 0 auto;
+    margin: 0 ;
 }
  
 .projects-nav-links a {
@@ -579,4 +524,36 @@ body.light-theme .projects-nav-links a:hover {
 body.light-theme .projects-theme-toggle {
     color: #18181f;
     border-color: #d5d5df;
+}
+
+/* Missing light-mode styles for the projects page */
+
+body.light-theme .projects-section-heading h1,
+body.light-theme .projects-card h2 {
+    color: #18181f;
+}
+
+body.light-theme .projects-page-intro,
+body.light-theme .projects-card p {
+    color: #666675;
+}
+
+body.light-theme .projects-card {
+    background: #ffffff;
+    border-color: #e5e5ec;
+}
+
+body.light-theme .projects-tech span {
+    background: #f0f0f6;
+    color: #555563;
+}
+
+body.light-theme .projects-link {
+    color: #18181f;
+    border-color: #8b5cf6;
+}
+
+body.light-theme .projects-link:hover {
+    background: #8b5cf6;
+    color: #ffffff;
 }
