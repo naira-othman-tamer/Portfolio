@@ -863,6 +863,112 @@ a {
     font-size: 0.85rem;
 }
 
+/* =========================
+   Light Theme
+========================= */
+
+body.light-theme {
+    background: #f7f7fb;
+    color: #18181f;
+}
+
+body.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom-color: #e5e5ec;
+}
+
+body.light-theme .logo span {
+    color: #18181f;
+}
+
+body.light-theme .nav-links a {
+    color: #666675;
+}
+
+body.light-theme .nav-links a:hover,
+body.light-theme .nav-links a.active {
+    color: #18181f;
+}
+
+body.light-theme .theme-toggle {
+    color: #18181f;
+    border-color: #d5d5df;
+}
+
+body.light-theme .hero {
+    background:
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(139, 92, 246, 0.10),
+            transparent 30%
+        );
+}
+
+body.light-theme .hero h2 {
+    color: #555563;
+}
+
+body.light-theme .hero-description,
+body.light-theme .about-text {
+    color: #666675;
+}
+
+body.light-theme .hero-socials a {
+    color: #555563;
+    border-color: #d5d5df;
+}
+
+body.light-theme .hero-image {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(139, 92, 246, 0.08),
+            rgba(255, 255, 255, 0.95)
+        );
+}
+
+body.light-theme .quick-highlights {
+    border-color: #e5e5ec;
+}
+
+body.light-theme .highlight-item {
+    border-color: #e5e5ec;
+}
+
+body.light-theme .highlight-item strong {
+    color: #18181f;
+}
+
+body.light-theme .highlight-item span {
+    color: #777785;
+}
+
+body.light-theme .secondary-btn {
+    border-color: #d5d5df;
+    color: #18181f;
+}
+
+body.light-theme .skill-card,
+body.light-theme .project-card,
+body.light-theme .education-card,
+body.light-theme .cert-card {
+    background: #ffffff;
+    border-color: #e5e5ec;
+}
+
+body.light-theme .skill-card p,
+body.light-theme .project-card p,
+body.light-theme .education-school {
+    color: #666675;
+}
+
+body.light-theme .about-info p {
+    color: #666675;
+}
+
+body.light-theme .about-info strong {
+    color: #18181f;
+}
 
 /* =========================
    Responsive

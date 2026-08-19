@@ -446,3 +446,35 @@ body {
     }
 
 }
+
+
+/* =========================
+   Light Theme
+========================= */
+
+body.light-theme {
+    background: #f7f7fb;
+    color: #18181f;
+}
+
+body.light-theme .certs-navbar {
+    background: #ffffff;
+    border-bottom-color: #e5e5ec;
+}
+
+body.light-theme .certs-logo {
+    color: #18181f;
+}
+
+body.light-theme .certs-nav-links a {
+    color: #666675;
+}
+
+body.light-theme .certs-nav-links a:hover {
+    color: #18181f;
+}
+
+body.light-theme .certs-theme-toggle {
+    color: #18181f;
+    border-color: #d5d5df;
+}
