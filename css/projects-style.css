@@ -1,6 +1,4 @@
 
-
-
 /* ==================================================
    PROJECTS PAGE
    ================================================== */
@@ -18,6 +16,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
  
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -26,141 +29,7 @@ body {
     line-height: 1.6;
     min-height: 100vh;
 }
- 
- 
-/* =========================
-   Navbar
-   ========================= */
- 
-.projects-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 58px;
- 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
- 
-    padding: 0 5%;
-    z-index: 1000;
- 
-    background: #0b0b12;
-    border-bottom: 1px solid #242433;
-}
- 
-.projects-logo {
-    width: 36px;
-    height: 36px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 8px;
-
-    color: #8b5cf6;
-    font-size: 1.4rem;
-    font-weight: 700;
-
-    border: 1px solid #8b5cf6;
-    /* color: #8b5cf6;
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-decoration: none;
- 
-    flex-shrink: 0; */
-}
- 
-.projects-logo span {
-    color: #f5f5f7;
-}
- 
- 
-/* Navigation */
- 
-.projects-nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-    gap: 30px;
- 
-    margin: 0 ;
-}
- 
-.projects-nav-links a {
-    position: relative;
- 
-    color: #b8b8c7;
-    text-decoration: none;
- 
-    font-size: 0.95rem;
-    font-weight: 500;
- 
-    white-space: nowrap;
- 
-    padding: 20px 0;
- 
-    transition: color 0.3s ease;
-}
- 
-.projects-nav-links a:hover,
-.projects-nav-links a.active {
-    color: #f5f5f7;
-}
- 
-.projects-nav-links a.active {
-    color: #8b5cf6;
-}
- 
-.projects-nav-links a.active::after {
-    content: "";
- 
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
- 
-    height: 2px;
- 
-    background: #8b5cf6;
-}
- 
- 
-/* Theme Button */
- 
-.projects-theme-toggle {
-    width: 40px;
-    height: 40px;
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
- 
-    flex-shrink: 0;
- 
-    background: transparent;
-    border: 1px solid #3a3a4a;
-    border-radius: 50%;
- 
-    color: #f5f5f7;
- 
-    font-size: 1rem;
- 
-    cursor: pointer;
- 
-    transition: 0.3s ease;
-}
- 
-.projects-theme-toggle:hover {
-    border-color: #8b5cf6;
-    color: #8b5cf6;
-}
- 
- 
 /* =========================
    Main Projects Page
    ========================= */
@@ -394,14 +263,6 @@ body {
  
 @media (max-width: 900px) {
  
-    .projects-navbar {
-        padding: 0 4%;
-    }
- 
-    .projects-nav-links {
-        gap: 20px;
-    }
- 
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -411,44 +272,6 @@ body {
  
 @media (max-width: 600px) {
  
-    .projects-navbar {
-        height: 58px;
- 
-        padding: 0 4%;
- 
-        gap: 15px;
-    }
- 
-    .projects-nav-links {
-        justify-content: flex-start;
- 
-        gap: 18px;
- 
-        overflow-x: auto;
- 
-        margin: 0;
- 
-        flex: 1;
- 
-        scrollbar-width: none;
-    }
- 
-    .projects-nav-links::-webkit-scrollbar {
-        display: none;
-    }
- 
-    .projects-nav-links a {
-        font-size: 0.9rem;
-    }
- 
-    /* .projects-theme-toggle {
-        width: 38px;
-        height: 38px;
-    } */
-
-    .theme-toggle {
-        flex-shrink: 0;
-    }
  
     .projects-page {
         padding-top: 105px;
@@ -476,14 +299,7 @@ body {
  
 @media (max-width: 400px) {
  
-    .projects-navbar {
-        padding: 0 3%;
-    }
- 
-    .projects-nav-links {
-        gap: 15px;
-    }
- 
+
     .projects-section-heading h1 {
         font-size: 1.9rem;
     }
@@ -504,27 +320,6 @@ body.light-theme {
     color: #18181f;
 }
 
-body.light-theme .projects-navbar {
-    background: #ffffff;
-    border-bottom-color: #e5e5ec;
-}
-
-body.light-theme .projects-logo {
-    color: #18181f;
-}
-
-body.light-theme .projects-nav-links a {
-    color: #666675;
-}
-
-body.light-theme .projects-nav-links a:hover {
-    color: #18181f;
-}
-
-body.light-theme .projects-theme-toggle {
-    color: #18181f;
-    border-color: #d5d5df;
-}
 
 /* Missing light-mode styles for the projects page */
 
