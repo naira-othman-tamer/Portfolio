@@ -695,8 +695,9 @@ a {
 
 .certs-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 320px));
     gap: 20px;
+    justify-content: center;
 }
 
 .cert-card {
@@ -733,6 +734,20 @@ a {
 .cert-card p {
     color: #9292a3;
     font-size: 0.85rem;
+}
+
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    font-size: 0.82rem;
+    color: #8b5cf6;
+    transition: opacity 0.2s ease;
+}
+
+.cert-link:hover {
+    opacity: 0.75;
 }
 
 /* =========================
