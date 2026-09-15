@@ -75,6 +75,11 @@ body {
  
     line-height: 1.2;
 }
+
+body.light-theme .projects-section-heading h1 {
+    color: #18181f;
+}
+
  
  
 /* Intro */
@@ -313,35 +318,3 @@ body.light-theme {
     color: #18181f;
 }
 
-
-/* Missing light-mode styles for the projects page */
-
-/* body.light-theme .projects-section-heading h1,
-body.light-theme .projects-card h2 {
-    color: #18181f;
-}
-
-body.light-theme .projects-page-intro,
-body.light-theme .projects-card p {
-    color: #666675;
-}
-
-body.light-theme .projects-card {
-    background: #ffffff;
-    border-color: #e5e5ec;
-}
-
-body.light-theme .projects-tech span {
-    background: #f0f0f6;
-    color: #555563;
-}
-
-body.light-theme .projects-link {
-    color: #18181f;
-    border-color: #8b5cf6;
-}
-
-body.light-theme .projects-link:hover {
-    background: #8b5cf6;
-    color: #ffffff;
-} */

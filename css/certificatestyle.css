@@ -75,6 +75,10 @@ body {
     line-height: 1.2;
 }
 
+body.light-theme .certs-section-heading h1 {
+    color: #18181f;
+}
+
 
 /* Intro */
 
