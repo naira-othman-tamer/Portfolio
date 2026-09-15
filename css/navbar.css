@@ -109,6 +109,14 @@
     color: #ffffff;
 }
 
+.nav-hamburger {
+    display: none;
+}
+
+.nav-overlay {
+    display: none;
+}
+
 .theme-toggle {
     width: 36px;
     height: 36px;
@@ -155,12 +163,117 @@ body.light-theme .theme-toggle {
     border-color: #d5d5df;
 }
 
+body.light-theme .nav-hamburger span {
+    background: #18181f;
+}
+
+body.light-theme .nav-links {
+    background: #ffffff;
+    border-color: #e5e5ec;
+}
+
+body.light-theme .nav-links a {
+    border-color: #f0f0f6;
+}
+
 
 /* =========================
    Responsive
    ========================= */
 
-@media (max-width: 900px) {
+   @media (max-width: 900px) {
+
+    .navbar {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .nav-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        flex-shrink: 0;
+    }
+
+    .nav-hamburger span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #f5f5f7;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-hamburger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+
+    .nav-overlay.open {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 260px;
+        height: 100vh;
+        background: #0b0b12;
+        border-left: 1px solid #242433;
+        z-index: 999;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 80px 30px 30px;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 14px 0;
+        width: 100%;
+        border-bottom: 1px solid #1e1e2e;
+        color: #b8b8c7;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-resume-btn {
+        display: none;
+    }
+}
+
+/* @media (max-width: 900px) {
 
     .navbar {
         height: 70px;
@@ -195,7 +308,7 @@ body.light-theme .theme-toggle {
     .theme-toggle {
         flex-shrink: 0;
     }
-}
+} */
 
 @media (max-width: 600px) {
 
