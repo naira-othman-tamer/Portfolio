@@ -14,6 +14,9 @@ class SiteNavbar extends HTMLElement {
         <a href="index.html#education" class="${active === "education" ? "active" : ""}">Education</a>
         <a href="certificates.html" class="${active === "certificates" ? "active" : ""}">Certificates</a>
         <a href="index.html#contact" class="${active === "contact" ? "active" : ""}">Contact</a>
+        <a href="https://drive.google.com/file/d/15KQkCtz0cYij7B2T8P1_FF_q61FV7Lmi/view"
+           target="_blank" rel="noopener noreferrer"
+           class="nav-sidebar-resume">Resume</a>
     </nav>
 
     <div class="nav-overlay" id="nav-overlay"></div>

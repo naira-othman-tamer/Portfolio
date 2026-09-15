@@ -268,9 +268,21 @@ body.light-theme .nav-links a {
         border-bottom: none;
     }
 
-    .nav-resume-btn {
-        display: none;
+    .nav-sidebar-resume {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 1px solid #8b5cf6;
+        border-radius: 20px;
+        color: #8b5cf6 !important;
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-bottom: none !important;
     }
+
+    /* .nav-resume-btn {
+        display: none;
+    } */
 }
 
 /* @media (max-width: 900px) {
