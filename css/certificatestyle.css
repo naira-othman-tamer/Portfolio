@@ -113,6 +113,16 @@ body.light-theme .certs-section-heading h1 {
    Certificate Card
    ========================= */
 
+   .certs-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.certs-card-header .certs-category {
+    margin-bottom: 0;
+}
 
 .certs-card-content {
     padding: 28px;
@@ -214,6 +224,15 @@ body.light-theme .certs-section-heading h1 {
     transform: translateY(-2px);
 }
 
+.certs-attended {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 16px;
+    border: 1px solid #242433;
+    border-radius: 7px;
+    color: #9292a3;
+    font-size: 0.88rem;
+}
 
 /* ==================================================
    RESPONSIVE
