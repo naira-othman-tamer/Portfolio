@@ -109,23 +109,6 @@ body {
    Certificate Card
    ========================= */
 
-.certs-card {
-    background: #12121b;
-
-    border: 1px solid #242433;
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    transition:
-        border-color 0.3s ease,
-        transform 0.3s ease;
-}
-
-.certs-card:hover {
-    border-color: #3a3a4a;
-    transform: translateY(-3px);
-}
 
 .certs-card-content {
     padding: 28px;

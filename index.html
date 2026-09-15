@@ -12,6 +12,7 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 
 <body>
@@ -269,10 +270,17 @@
             <div class="projects-container">
 
                 <!-- Fitness Application -->
-     <div class="project-card">
-       <div class="project-content">
-          <div class="project-category">Backend Development</div>
+       <div class="project-card">
+           <div class="project-content">
+      <div class="project-card-header">
+         <div class="project-card-icon">
+            <i class="fas fa-dumbbell"></i>
+        </div>
 
+        <div class="project-category">Backend Development</div>
+
+      </div>
+        
         <h3>Fitness Application</h3>
 
         <p>
@@ -302,29 +310,38 @@
     </div>
 </div>
 
-
-<!-- LMS Platform -->
-<div class="project-card">
+        <!-- LMS Platform -->
+  <div class="project-card">
     <div class="project-content">
-        <div class="project-category">Web Application</div>
+
+        <div class="project-card-header">
+    <div class="project-card-icon">
+        <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="project-category">Web Application · Backend</div>
+</div>
 
         <h3>LMS Platform</h3>
 
         <p>
-            A learning management system developed as a .NET-based
-            web application with a focus on backend functionality.
+            A diploma-based learning and assessment platform with secure
+            quiz attempts, JWT auth, and admin
+            analytics — built for real institutional use.
         </p>
 
         <div class="project-tech">
             <span>C#</span>
-            <span>.NET</span>
             <span>ASP.NET Core</span>
-            <span>Entity Framework Core</span>
-            <span>SQL Server</span>
+            <span>EF Core</span>
             <span>SQL Server</span>
             <span>CQRS</span>
-            <span>Verical Slicing</span>
+            <span>Vertical Slice Arch</span>
             <span>Hangfire</span>
+            <span>JWT</span>
+            <span>Redis</span>
+            <span>Rate Limiting</span>
+            <span>Scalar</span>
+            
         </div>
 
         <a href="https://github.com/naira-othman-tamer/LMSPlatform"
@@ -334,40 +351,57 @@
             <i class="fab fa-github"></i>
             GitHub
         </a>
+      </div>
     </div>
-</div>
 
 
-<!-- UniRoute -->
-<!-- <div class="project-card">
+
+    <!-- E-Commerce API -->
+<div class="project-card">
     <div class="project-content">
-        <div class="project-category">Backend / Web Scraping</div>
 
-        <h3>UniRoute</h3>
+        <div class="project-card-header">
+            <div class="project-card-icon">
+                <i class="fas fa-cart-shopping"></i>
+            </div>
+            <div class="project-category">Backend · API</div>
+        </div>
+
+        <h3>E-Commerce Web API</h3>
 
         <p>
-            A trip aggregation system that collects bus trips from
-            multiple companies using web scraping and intelligent data normalization.
+            A layered e-commerce backend covering product catalog, basket management,
+            order processing, and JWT auth — with filtering, sorting, and pagination
+            powered by the Specification Pattern.
         </p>
 
         <div class="project-tech">
             <span>C#</span>
+            <span>.NET 10</span>
             <span>ASP.NET Core</span>
-            <span>Clean Architecture</span>
-            <span>Playwright</span>
-            <span>Hangfire</span>
+            <span>EF Core</span>
+            <span>SQL Server</span>
+            <span>JWT</span>
+            <span>Identity</span>
+            <span>Scalar</span>
+            <span>Swagger</span>
+            <span>Stripe</span>
         </div>
 
-        <a href="https://github.com/naira-othman-tamer/UniRoute-System-Api"
+        <a href="https://github.com/naira-othman-tamer/E-Commerce.web"
            target="_blank"
            rel="noopener noreferrer"
            class="project-link">
             <i class="fab fa-github"></i>
             GitHub
         </a>
+
     </div>
-</div> -->
-            </div>
+</div>
+           
+
+    
+</div>
 
             <div class="projects-action">
     <a href="projects.html" class="btn btn-outline">

@@ -1,0 +1,147 @@
+/* =========================
+   Shared Card Base
+   ========================= */
+
+.project-card,
+.projects-card,
+.skill-card,
+.cert-card,
+.certs-card,
+.experience-content,
+.education-card {
+    background: #12121b;
+    border: 1px solid #242433;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.projects-card:hover,
+.skill-card:hover,
+.cert-card:hover,
+.certs-card:hover,
+.experience-content:hover,
+.education-card:hover {
+    transform: translateY(-6px);
+    border-color: #8b5cf6;
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
+}
+
+
+/* =========================
+   Shared Card Header
+   (icon + category in one row)
+   ========================= */
+
+.project-card-header,
+.projects-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.project-card-header .project-category,
+.projects-card-header .projects-category {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Shared Card Icon Box
+   ========================= */
+
+.project-card-icon,
+.projects-card-icon,
+.cert-icon,
+.certs-card-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #8b5cf6;
+    font-size: 1.35rem;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.08);
+}
+
+
+/* =========================
+   Light Mode — cards stay dark
+   ========================= */
+
+body.light-theme .project-card,
+body.light-theme .projects-card,
+body.light-theme .skill-card,
+body.light-theme .cert-card,
+body.light-theme .certs-card,
+body.light-theme .experience-content,
+body.light-theme .education-card {
+    background: #f0f0f6;
+    border-color: #dcdce8;
+}
+
+body.light-theme .project-card:hover,
+body.light-theme .projects-card:hover,
+body.light-theme .skill-card:hover,
+body.light-theme .cert-card:hover,
+body.light-theme .experience-content:hover,
+body.light-theme .education-card:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
+}
+
+/* Card text — light mode */
+
+body.light-theme .skill-card h3,
+body.light-theme .project-card h3,
+body.light-theme .projects-card h2,
+body.light-theme .experience-header h3,
+body.light-theme .education-main h3,
+body.light-theme .cert-card h3,
+body.light-theme .certs-card h2 {
+    color: #18181f;
+}
+
+body.light-theme .skill-card p,
+body.light-theme .project-card p,
+body.light-theme .projects-card p,
+body.light-theme .experience-company,
+body.light-theme .experience-list li,
+body.light-theme .education-school,
+body.light-theme .education-gpa,
+body.light-theme .cert-card p,
+body.light-theme .certs-card p {
+    color: #555563;
+}
+
+body.light-theme .project-tech span,
+body.light-theme .projects-tech span,
+body.light-theme .course-tags span {
+    background: #e2e2ee;
+    color: #444452;
+}
+
+body.light-theme .project-link,
+body.light-theme .projects-link,
+body.light-theme .certs-link {
+    color: #18181f;
+    border-color: #8b5cf6;
+}
+
+body.light-theme .project-link:hover,
+body.light-theme .projects-link:hover,
+body.light-theme .certs-link:hover {
+    background: #8b5cf6;
+    color: #ffffff;
+}
+
+body.light-theme .project-category,
+body.light-theme .projects-category,
+body.light-theme .certs-category {
+    color: #7c3aed;
+}

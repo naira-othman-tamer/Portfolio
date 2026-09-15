@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/projects-style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
@@ -88,48 +89,103 @@
                 </article>
 
 
-                <!-- LMS Platform -->
-                <article class="projects-card">
+               <!-- LMS Platform -->
+<article class="projects-card">
+    <div class="projects-card-content">
 
-                    <div class="projects-card-content">
+        <div class="projects-card-header">
+            <div class="projects-card-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="projects-category">Web Application · Backend</div>
+        </div>
 
-                        <div class="projects-card-icon">
-                               <i class="fas fa-graduation-cap"></i>
-                        </div>
+        <h2>LMS Platform</h2>
 
-                        <div class="projects-category">
-                            Web Application
-                        </div>
+        <p>
+           A full-featured LMS built for educational institutions.
+            Students enroll in diploma programs,
+            take timed quizzes with server-enforced deadlines,
+            and review detailed result breakdowns after submission.
+            Admins manage the full content lifecycle —
+            from drafting diplomas to publishing quizzes
+            and monitoring performance through analytics dashboards.
+            Built with security-first design: bcrypt passwords,
+            JWT with refresh tokens, rate limiting, and auto-submission on timeout.
+        </p>
 
-                        <h2>LMS Platform</h2>
+        <div class="projects-tech">
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>EF Core</span>
+            <span>SQL Server</span>
+            <span>CQRS</span>
+            <span>Vertical Slice Arch</span>
+            <span>Hangfire</span>
+            <span>JWT</span>
+            <span>Redis</span>
+            <span>Rate Limiting</span>
+            <span>Scalar</span>
+        </div>
 
-                        <p>
-                            A learning management system developed as a
-                            .NET-based web application with a focus on
-                            backend functionality.
-                        </p>
+        <a href="https://github.com/naira-othman-tamer/LMSPlatform"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="projects-link">
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
 
-                        <div class="projects-tech">
-                            <span>C#</span>
-                            <span>.NET</span>
-                            <span>ASP.NET Core</span>
-                            <span>Entity Framework Core</span>
-                            <span>SQL Server</span>
-                        </div>
+    </div>
+</article>
 
-                        <a
-                            href="https://github.com/naira-othman-tamer/LMSPlatform"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="projects-link"
-                        >
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
+               <!-- E-Commerce API -->
+<article class="projects-card">
+    <div class="projects-card-content">
 
-                    </div>
+        <div class="projects-card-header">
+            <div class="projects-card-icon">
+                <i class="fas fa-cart-shopping"></i>
+            </div>
+            <div class="projects-category">Backend · API</div>
+        </div>
 
-                </article>
+        <h2>E-Commerce Web API</h2>
+
+        <p>
+            A modern e-commerce backend built with ASP.NET Core 10 and a clean layered architecture.
+            Covers the full shopping lifecycle — product catalog with filtering, sorting, and pagination
+            via the Specification Pattern; basket management; order processing with shipping; and secure
+            JWT auth with ASP.NET Core Identity. Centralized exception handling and consistent API error
+            responses keep the surface predictable. Payment integration and Angular frontend are actively
+            in progress.
+        </p>
+
+        <div class="projects-tech">
+            <span>C#</span>
+            <span>.NET 10</span>
+            <span>ASP.NET Core</span>
+            <span>EF Core</span>
+            <span>SQL Server</span>
+            <span>JWT</span>
+            <span>ASP.NET Identity</span>
+            <span>AutoMapper</span>
+            <span>Specification Pattern</span>
+            <span>Repository Pattern</span>
+            <span>Unit of Work</span>
+            <span>Scalar</span>
+        </div>
+
+        <a href="https://github.com/naira-othman-tamer/E-Commerce.web"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="projects-link">
+            <i class="fab fa-github"></i>
+            GitHub
+        </a>
+
+    </div>
+</article>
 
 
                 <!-- UniRoute -->
@@ -251,7 +307,7 @@
 
                         <div class="projects-card-icon">
         <i class="fas fa-file-pen"></i>
-    </div>
+            </div>
 
                         <div class="projects-category">
                             Project
@@ -310,39 +366,7 @@
                     </div>
 
                 </article>
-
-
-                <!-- Talabat Simulation System -->
-                <article class="projects-card">
-
-                    <div class="projects-card-content">
-                         <div class="projects-card-icon">
-                                <i class="fas fa-motorcycle"></i>
-                     </div>
-
-                        <div class="projects-category">
-                            Project
-                        </div>
-
-                        <h2>Talabat Simulation System</h2>
-
-                        <p>
-                            Project details will be added soon.
-                        </p>
-
-                        <a
-                            href="https://github.com/naira-othman-tamer/TalabatSimulationSystem"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="projects-link"
-                        >
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </article>
+              
 
             </div>
 
